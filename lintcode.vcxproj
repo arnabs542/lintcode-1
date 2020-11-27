@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{76a55a0f-a394-436e-a27c-a3164f3bea79}</ProjectGuid>
+    <RootNamespace>lintcode</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lintcode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="class-hw.h" />
+    <ClInclude Include="data-types.h" />
+    <ClInclude Include="lintcode-0005.h" />
+    <ClInclude Include="lintcode-0006.h" />
+    <ClInclude Include="lintcode-0007.h" />
+    <ClInclude Include="lintcode-0010.h" />
+    <ClInclude Include="lintcode-0011.h" />
+    <ClInclude Include="lintcode-0012.h" />
+    <ClInclude Include="lintcode-0013.h" />
+    <ClInclude Include="lintcode-0015.h" />
+    <ClInclude Include="lintcode-0016.h" />
+    <ClInclude Include="lintcode-0017.h" />
+    <ClInclude Include="lintcode-0018.h" />
+    <ClInclude Include="lintcode-0028.h" />
+    <ClInclude Include="lintcode-0033.h" />
+    <ClInclude Include="lintcode-0034.h" />
+    <ClInclude Include="lintcode-0038.h" />
+    <ClInclude Include="lintcode-0040.h" />
+    <ClInclude Include="lintcode-0046.h" />
+    <ClInclude Include="lintcode-0056.h" />
+    <ClInclude Include="lintcode-0057.h" />
+    <ClInclude Include="lintcode-0059.h" />
+    <ClInclude Include="lintcode-0061.h" />
+    <ClInclude Include="lintcode-0064.h" />
+    <ClInclude Include="lintcode-0065.h" />
+    <ClInclude Include="lintcode-0068.h" />
+    <ClInclude Include="lintcode-0069.h" />
+    <ClInclude Include="lintcode-0072.h" />
+    <ClInclude Include="lintcode-0076.h" />
+    <ClInclude Include="lintcode-0080.h" />
+    <ClInclude Include="lintcode-0088.h" />
+    <ClInclude Include="lintcode-0090.h" />
+    <ClInclude Include="lintcode-0092.h" />
+    <ClInclude Include="lintcode-0102.h" />
+    <ClInclude Include="lintcode-0103.h" />
+    <ClInclude Include="lintcode-0104.h" />
+    <ClInclude Include="lintcode-0109.h" />
+    <ClInclude Include="lintcode-0110.h" />
+    <ClInclude Include="lintcode-0111.h" />
+    <ClInclude Include="lintcode-0114.h" />
+    <ClInclude Include="lintcode-0115.h" />
+    <ClInclude Include="lintcode-0116.h" />
+    <ClInclude Include="lintcode-0120.h" />
+    <ClInclude Include="lintcode-0125.h" />
+    <ClInclude Include="lintcode-0127.h" />
+    <ClInclude Include="lintcode-0128.h" />
+    <ClInclude Include="lintcode-0129.h" />
+    <ClInclude Include="lintcode-0130.h" />
+    <ClInclude Include="lintcode-0132.h" />
+    <ClInclude Include="lintcode-0134.h" />
+    <ClInclude Include="lintcode-0135.h" />
+    <ClInclude Include="lintcode-0137.h" />
+    <ClInclude Include="lintcode-0138.h" />
+    <ClInclude Include="lintcode-0140.h" />
+    <ClInclude Include="lintcode-0143.h" />
+    <ClInclude Include="lintcode-0148.h" />
+    <ClInclude Include="lintcode-0154.h" />
+    <ClInclude Include="lintcode-0155.h" />
+    <ClInclude Include="lintcode-0183.h" />
+    <ClInclude Include="lintcode-0187.h" />
+    <ClInclude Include="lintcode-0192.h" />
+    <ClInclude Include="lintcode-0200.h" />
+    <ClInclude Include="lintcode-0209.h" />
+    <ClInclude Include="lintcode-0228.h" />
+    <ClInclude Include="lintcode-0235.h" />
+    <ClInclude Include="lintcode-0242.h" />
+    <ClInclude Include="lintcode-0246.h" />
+    <ClInclude Include="lintcode-0272.h" />
+    <ClInclude Include="lintcode-0376.h" />
+    <ClInclude Include="lintcode-0380.h" />
+    <ClInclude Include="lintcode-0386.h" />
+    <ClInclude Include="lintcode-0397.h" />
+    <ClInclude Include="lintcode-0398.h" />
+    <ClInclude Include="lintcode-0414.h" />
+    <ClInclude Include="lintcode-0415.h" />
+    <ClInclude Include="lintcode-0425.h" />
+    <ClInclude Include="lintcode-0428.h" />
+    <ClInclude Include="lintcode-0433.h" />
+    <ClInclude Include="lintcode-0437.h" />
+    <ClInclude Include="lintcode-0440.h" />
+    <ClInclude Include="lintcode-0448.h" />
+    <ClInclude Include="lintcode-0453.h" />
+    <ClInclude Include="lintcode-0457.h" />
+    <ClInclude Include="lintcode-0462.h" />
+    <ClInclude Include="lintcode-0463.h" />
+    <ClInclude Include="lintcode-0464.h" />
+    <ClInclude Include="lintcode-0465.h" />
+    <ClInclude Include="lintcode-0474.h" />
+    <ClInclude Include="lintcode-0521.h" />
+    <ClInclude Include="lintcode-0531.h" />
+    <ClInclude Include="lintcode-0547.h" />
+    <ClInclude Include="lintcode-0548.h" />
+    <ClInclude Include="lintcode-0563.h" />
+    <ClInclude Include="lintcode-0577.h" />
+    <ClInclude Include="lintcode-0578.h" />
+    <ClInclude Include="lintcode-0582.h" />
+    <ClInclude Include="lintcode-0587.h" />
+    <ClInclude Include="lintcode-0594.h" />
+    <ClInclude Include="lintcode-0596.h" />
+    <ClInclude Include="lintcode-0600.h" />
+    <ClInclude Include="lintcode-0602.h" />
+    <ClInclude Include="lintcode-0603.h" />
+    <ClInclude Include="lintcode-0604.h" />
+    <ClInclude Include="lintcode-0606.h" />
+    <ClInclude Include="lintcode-0609.h" />
+    <ClInclude Include="lintcode-0610.h" />
+    <ClInclude Include="lintcode-0611.h" />
+    <ClInclude Include="lintcode-0615.h" />
+    <ClInclude Include="lintcode-0616.h" />
+    <ClInclude Include="lintcode-0624.h" />
+    <ClInclude Include="lintcode-0627.h" />
+    <ClInclude Include="lintcode-0630.h" />
+    <ClInclude Include="lintcode-0657.h" />
+    <ClInclude Include="lintcode-0667.h" />
+    <ClInclude Include="lintcode-0680.h" />
+    <ClInclude Include="lintcode-0683.h" />
+    <ClInclude Include="lintcode-0685.h" />
+    <ClInclude Include="lintcode-0724.h" />
+    <ClInclude Include="lintcode-0761.h" />
+    <ClInclude Include="lintcode-0787.h" />
+    <ClInclude Include="lintcode-0788.h" />
+    <ClInclude Include="lintcode-0793.h" />
+    <ClInclude Include="lintcode-0794.h" />
+    <ClInclude Include="lintcode-0802.h" />
+    <ClInclude Include="lintcode-0816.h" />
+    <ClInclude Include="lintcode-0839.h" />
+    <ClInclude Include="lintcode-0841.h" />
+    <ClInclude Include="lintcode-0845.h" />
+    <ClInclude Include="lintcode-0859.h" />
+    <ClInclude Include="lintcode-0891.h" />
+    <ClInclude Include="lintcode-0900.h" />
+    <ClInclude Include="lintcode-0902.h" />
+    <ClInclude Include="lintcode-0915.h" />
+    <ClInclude Include="lintcode-0931.h" />
+    <ClInclude Include="lintcode-0939.h" />
+    <ClInclude Include="lintcode-1179.h" />
+    <ClInclude Include="lintcode-1246.h" />
+    <ClInclude Include="lintcode-1311.h" />
+    <ClInclude Include="lintcode-1343.h" />
+    <ClInclude Include="lintcode-1375.h" />
+    <ClInclude Include="lintcode-1536.h" />
+    <ClInclude Include="lintcode-1790.h" />
+    <ClInclude Include="lintcode-1870.h" />
+    <ClInclude Include="lintcode-1879.h" />
+    <ClInclude Include="lintcode.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
