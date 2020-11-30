@@ -25,7 +25,59 @@ Notice
 	You should do really partition in array nums instead of just counting the numbers of integers smaller than k.
 	If all elements in nums are smaller than k, then return nums.length
 */
+class Solution31 {
+public:
+    /**
+     * @param nums: The integer array you should partition
+     * @param k: An integer
+     * @return: The index after partition
+     */
+    int partitionArrayTwoPointer1(std::vector<int>& nums, int k) {
+        // write your code here
+        if (nums.empty()) {
+            return 0;
+        }
 
+        //int result = 0;
+        int left = 0, idx = 0, n = nums.size();
+        while (idx < n) {
+            if (nums[idx] < k) {
+                std::swap(nums[left], nums[idx]);
+                idx++;
+                left++;
+            }
+            else {
+                idx++;
+            }
+        }
+        return left;
+    }
+
+    int partitionArrayTwoPointer2(std::vector<int>& nums, int k) {
+        // write your code here
+        if (nums.empty()) {
+            return 0;
+        }
+
+        //int result = 0;
+        int left = 0, right = nums.size() - 1;
+        while (left <= right) {
+            while (left <= right && nums[left] < k) {
+                left++;
+            }
+            while (left <= right && nums[right] >= k) {
+                right--;
+            }
+            if (left <= right) {
+                std::swap(nums[left], nums[right]);
+                left++;
+                right--;
+            }
+        }
+        return left;
+    }
+
+};
 
 
 #endif

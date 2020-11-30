@@ -11,6 +11,7 @@
 #include "lintcode-0017.h"
 #include "lintcode-0018.h"
 #include "lintcode-0028.h"
+#include "lintcode-0031.h"
 #include "lintcode-0033.h"
 #include "lintcode-0034.h"
 #include "lintcode-0038.h"
