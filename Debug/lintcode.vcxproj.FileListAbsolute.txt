@@ -1,2 +1,0 @@
-D:\git\lintcode\Debug\lintcode.exe
-D:\git\lintcode\Debug\lintcode.pdb
