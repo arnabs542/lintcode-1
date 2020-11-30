@@ -455,5 +455,11 @@
     <ClInclude Include="lintcode-1879.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="lintcode-0607.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lintcode-0031.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

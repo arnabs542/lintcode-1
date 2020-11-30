@@ -105,6 +105,7 @@
 #include "lintcode-0603.h"
 #include "lintcode-0604.h"
 #include "lintcode-0606.h"
+#include "lintcode-0607.h"
 #include "lintcode-0609.h"
 #include "lintcode-0610.h"
 #include "lintcode-0611.h"

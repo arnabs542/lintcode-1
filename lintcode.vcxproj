@@ -156,6 +156,7 @@
     <ClInclude Include="lintcode-0017.h" />
     <ClInclude Include="lintcode-0018.h" />
     <ClInclude Include="lintcode-0028.h" />
+    <ClInclude Include="lintcode-0031.h" />
     <ClInclude Include="lintcode-0033.h" />
     <ClInclude Include="lintcode-0034.h" />
     <ClInclude Include="lintcode-0038.h" />
@@ -246,6 +247,7 @@
     <ClInclude Include="lintcode-0603.h" />
     <ClInclude Include="lintcode-0604.h" />
     <ClInclude Include="lintcode-0606.h" />
+    <ClInclude Include="lintcode-0607.h" />
     <ClInclude Include="lintcode-0609.h" />
     <ClInclude Include="lintcode-0610.h" />
     <ClInclude Include="lintcode-0611.h" />
